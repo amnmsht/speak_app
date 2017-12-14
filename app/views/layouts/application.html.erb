@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SpeakApp</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav>
+        <div>
+          <ul>
+            <li class="header-menus">
+            <%= link_to "TOP",root_path %>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li class="header-menus">
+            <%= link_to "投稿一覧",posts_path %>
+            </li>
+          </ul>
+        </div>
+      <div>
+        <ul>
+          <li class="header-menus">
+          <%= link_to "新規投稿",new_post_path %>
+          </li>
+        </ul>
+      </div>
+      </nav>
+    </header>
+    
+    <%= yield %>
+    
+    <footer class="footer">
+      <div>
+        <ul>
+          <li>
+            <p>2017年9月期生  天野昌仁</p>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

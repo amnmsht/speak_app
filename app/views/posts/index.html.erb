@@ -1,0 +1,32 @@
+<div>
+  <h3>投稿一覧</h3>
+</div>
+
+<div>
+  <h3><%= notice %></h3>
+</div>
+
+<div class="main posts-index">
+  <div class="container">
+    <table>
+      <!--<tr>-->
+        <!--<th >投稿一覧</th>-->
+      <!--</tr>-->
+        <% @posts.each do |post| %>
+          <tr>
+            <td class="posts-index-item"><%= post.content %>
+            <!--<td class ="btn"><%= link_to '詳細', post_path(post.id) %></td>-->
+            <td class ="btn"><%= link_to '編集',edit_post_path(post.id),data: { confirm: '本当に編集していいですか？' }  %></td>
+            <td class ="btn"><%= link_to '削除', post_path(post.id), method: :delete, data: { confirm: '本当に削除していいですか？' } %></td>
+          </tr>
+        </div>
+      <% end %>
+    </table>
+  <!--</div>-->
+
+   <br>
+   <div>
+     <!--<h3><%= link_to '新しく投稿する',new_post_path %></h3>-->
+  </div>
+</div>
+

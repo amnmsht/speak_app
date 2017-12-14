@@ -1,0 +1,24 @@
+<div class="main posts-form">
+  <div class="container">
+    <%= form_with(model: @post,local: true,url: choose_new_or_edit) do |form| %>
+      <% if @post.errors.any? %>
+        <div id="error_explanation">
+        <!--<h2><%= @post.errors.count %>件のエラーがあります。</h2>-->
+          <ul>
+            <% @post.errors.full_messages.each do |msg| %>
+              <li class = "msg"><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+      <div class="post_title">
+        <%= form.label :本文： %></td>
+        <%= form.text_field :content %></td>
+      </div>
+    <div class=form_submit>
+      <%= form.submit"投稿します" %>
+      <% end %>
+  <!--<%= link_to "投稿一覧にもどる", posts_path %>-->
+    </div>
+  </div>
+</div>

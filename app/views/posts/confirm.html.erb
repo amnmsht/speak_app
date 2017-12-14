@@ -1,0 +1,24 @@
+<div class="main posts-index">
+  <div class="container">
+　  <div>
+      <h3>以下の内容で投稿しますか？</h3>
+    </div>
+      <div>
+        <%= form_with(model: @post, url: posts_path, local: true) do |form| %>
+        <%= form.hidden_field :content %>
+      </div>
+   <div class=post_title> 
+     <p>本文：<%= @post.content %></p>
+   </div>
+     <div class=form_submit>
+       <%= form.submit  "登録する" %>
+       <% end %>
+     </div>
+    <div class=form_submit>
+      <%= form_with(model: @post, url: new_post_path, local: true, method: 'get') do |form| %>
+      <%= form.hidden_field :content %>
+      <%= form.submit "もどる", name: 'back' %>
+      <% end %>
+    </div>
+  </div>
+</div>

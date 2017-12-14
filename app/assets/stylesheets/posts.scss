@@ -1,0 +1,154 @@
+/* 共通 ================================ */
+/* top ================================ */
+ body{
+   font-fmily:"Avenir Next";
+ }
+ 
+h1, h2, h3, h4, h5, h6, p {
+  text-align: center;
+}
+
+/*ここから*/
+.main-header {
+  padding-bottom:0px;
+  width: 100%;
+  background-size: cover;
+  background-image: url("top.jpeg");
+  background-attachment: fixed;
+}
+
+.main-header img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  padding-top:50px;
+}
+
+.about {
+  background-color: white;
+  color: #333;
+  padding: 80px;
+}
+
+.about{
+  font-size:20px;
+}
+
+/*ここまでを入れ替える*/
+
+header {
+  top: 0px;
+  height: 60px;
+  position: absolute;
+  width: 100%;
+  color: white;
+  background-color:#000066;
+  position: fixed;
+}
+
+header ul a {
+  color: white;
+}
+
+.header-menus{
+  float: left;
+  padding: 10px;
+  font-size: 20px;
+  color:white;
+}
+
+body {
+  color: #2d3133;
+  background-color: #FFFFCC;
+  margin: 0;
+  clear:both;
+}
+
+ul {
+list-style-type: none;
+}
+
+.footer{
+  position: fixed;            /* フッターの固定 */
+  bottom: 0px;                /* 位置(下0px) */
+  left: 0px;                  /* 位置(左0px) */
+  width: 100%;                /* 横幅100%　*/
+  height: 45px;              /* 縦幅140px */
+  color: white;
+  background-color:#000066;
+  text-align: center;
+  padding:5px;
+}
+
+.footer,p{
+  padding-top:5px;
+}
+
+/* index ================================ */
+.container {
+  max-width: 900px;
+  margin: 100px auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  clear: both;
+}
+
+.posts-index-item {
+  padding: 20px 30px;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 2px 6px #c1ced7;
+  font-size:15px;
+  }
+
+.btn{
+  width: 60px;
+  height: 30px;
+  color: blue;
+  font-size: 15px;
+  background-color: white;
+  border: solid gray 1px;
+  border-radius: 5px;
+  margin:15px 5px 15px 5px;
+}
+
+/*_form ================================ */
+.main posts-form{
+}
+
+.main posts-index{
+}
+
+.container{
+}
+
+.btn{
+}
+
+.post_title{
+  width:600px;
+  padding: 20px 30px;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 2px 6px #c1ced7;
+  font-size:15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post_label{
+}
+
+.post_content{
+}
+
+.form_submit{
+  margin-top:15px;
+  text-align:center;
+}
+
+.msg{
+  font-size:20px;
+  text-align:center;
+  color:red;
+}
