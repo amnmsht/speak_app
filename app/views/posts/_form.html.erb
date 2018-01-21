@@ -1,5 +1,7 @@
-<div class="main posts-form">
-  <div class="container">
+<div class="container">   <!--全体を囲むコンテナ-->
+
+  <div class="main posts-form">
+
     <%= form_with(model: @post,local: true,url: choose_new_or_edit) do |form| %>
       <% if @post.errors.any? %>
         <div id="error_explanation">
@@ -21,4 +23,4 @@
   <!--<%= link_to "投稿一覧にもどる", posts_path %>-->
     </div>
   </div>
-</div>
+</div>   <!--全体を囲むコンテナ-->
